@@ -70,7 +70,7 @@ export class LanguageComponent implements OnInit {
   onRemove(key: string) {
     this.languageService.delete(key);
     this.snackBar.open(
-      "Successfully deleted!",
+      "Excluído com sucesso!",
       null,
       environment.snackBarConfig
     );

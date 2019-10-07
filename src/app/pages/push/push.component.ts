@@ -63,7 +63,7 @@ export class PushComponent implements OnInit {
         this.pushService.newNotifications(result["header"], result["content"]);
         this.getNotifications();
         this.snackBar.open(
-          "Successfully published!",
+          "Publicado com sucesso!",
           null,
           environment.snackBarConfig
         );

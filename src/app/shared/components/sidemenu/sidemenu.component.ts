@@ -18,22 +18,22 @@ export class SidemenuComponent implements OnInit {
       icon: "dashboard"
     },
     {
-      label: "Quizzes",
+      label: "Quizes",
       link: "/quiz",
       icon: "file_copy"
     },
     {
-      label: "Categories",
+      label: "Categorias",
       link: "/category",
       icon: "list_alt"
     },
     {
-      label: "Users",
+      label: "Usuários",
       link: "/user",
       icon: "people"
     },
     {
-      label: "Exams History",
+      label: "Histórico de testes",
       link: "/exam",
       icon: "history"
     },
@@ -43,28 +43,28 @@ export class SidemenuComponent implements OnInit {
       icon: "notifications"
     },
     {
-      label: "Contacts",
+      label: "Contatos",
       link: "/contact",
       icon: "email"
     },
     {
-      label: "Customize",
+      label: "Customizar",
       icon: "apps",
       items: [
         {
-          label: "About Us",
+          label: "Sobre",
           link: "/about",
           icon: "information"
         },
         {
-          label: "Languages",
+          label: "Idiomas",
           link: "/language",
           icon: "language"
         }
       ]
     },
     {
-      label: "Account",
+      label: "Conta",
       link: "/account",
       icon: "account_circle"
     },
@@ -74,7 +74,7 @@ export class SidemenuComponent implements OnInit {
       icon: "error"
     },
     {
-      label: "Logout",
+      label: "Sair",
       link: "/logout",
       icon: "logout"
     }

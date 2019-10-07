@@ -67,7 +67,7 @@ export class AddQuestionComponent implements OnInit {
       this.questionService.add(this.quizKey, question);
       this.router.navigateByUrl(`question/${this.quizKey}`);
       this.snackBar.open(
-        "Successfully added!",
+        "Adicionado com sucesso!",
         null,
         environment.snackBarConfig
       );

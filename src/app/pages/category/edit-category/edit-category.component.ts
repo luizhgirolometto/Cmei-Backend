@@ -51,7 +51,7 @@ export class EditCategoryComponent implements OnInit {
       this.categoryService.update(values as Category, this.key);
       this.router.navigate(["category"]);
       this.snackBar.open(
-        "Successfully updated!",
+        "Atualizado com sucesso!",
         null,
         environment.snackBarConfig
       );

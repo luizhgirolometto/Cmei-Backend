@@ -4,51 +4,51 @@
       [formGroup]="quizForm" (ngSubmit)="onQuizFormSubmit(quizForm.value)">
       <mat-card-header>
         <mat-card-title>
-          <h2>CREATE QUIZ</h2>
+          <h2>CRIAR QUIZ</h2>
         </mat-card-title>
       </mat-card-header>
 
       <mat-form-field fxFlex>
-        <mat-label>Title</mat-label>
-        <input matInput formControlName="title" placeholder="Title" autocomplete="off">
-        <mat-error *ngIf="quizForm.controls.title.errors?.required">Title is required</mat-error>
+        <mat-label>Título</mat-label>
+        <input matInput formControlName="title" placeholder="Título" autocomplete="off">
+        <mat-error *ngIf="quizForm.controls.title.errors?.required">Título é obrigatório</mat-error>
       </mat-form-field>
 
       <mat-form-field fxFlex>
-        <mat-label>Choose Category</mat-label>
+        <mat-label>Escolha uma categoria</mat-label>
         <mat-select formControlName="category">
           <mat-option *ngFor="let category of categories" [value]="category.name">
             {{category.name}}
           </mat-option>
         </mat-select>
-        <mat-error *ngIf="quizForm.controls.language.hasError('required')">Please choose a category</mat-error>
+        <mat-error *ngIf="quizForm.controls.language.hasError('required')">Por favor escolha uma categoria</mat-error>
       </mat-form-field>
 
       <mat-form-field fxFlex>
-        <mat-label>Choose Language</mat-label>
+        <mat-label>Idioma</mat-label>
         <mat-select formControlName="language">
           <mat-option *ngFor="let language of languages" [value]="language.name">
             {{language.name}}
           </mat-option>
         </mat-select>
-        <mat-error *ngIf="quizForm.controls.language.hasError('required')">Please choose a language</mat-error>
+        <mat-error *ngIf="quizForm.controls.language.hasError('required')">Por favor escolha um idioma</mat-error>
       </mat-form-field>
 
       <mat-form-field fxFlex>
-        <mat-label>Duration</mat-label>
-        <input matInput formControlName="duration" placeholder="Minute">
-        <mat-error *ngIf="quizForm.controls.duration.errors?.required">Duration is required</mat-error>
-        <mat-error *ngIf="quizForm.controls.duration.errors?.pattern">Use only number</mat-error>
+        <mat-label>Tempo de duração</mat-label>
+        <input matInput formControlName="duration" placeholder="Minutos">
+        <mat-error *ngIf="quizForm.controls.duration.errors?.required">Duração é obritatória</mat-error>
+        <mat-error *ngIf="quizForm.controls.duration.errors?.pattern">Use apenas números</mat-error>
       </mat-form-field>
 
       <mat-form-field fxFlex>
-        <textarea matInput formControlName="description" placeholder="Description" rows="5"></textarea>
+        <textarea matInput formControlName="description" placeholder="Descrição" rows="5"></textarea>
       </mat-form-field>
 
-      <mat-checkbox formControlName="status">PUBLISH</mat-checkbox>
+      <mat-checkbox formControlName="status">PUBLICAR</mat-checkbox>
 
       <mat-card-actions>
-        <button mat-raised-button color="primary">CREATE</button>
+        <button mat-raised-button color="primary">CRIAR</button>
       </mat-card-actions>
     </form>
   </mat-card>

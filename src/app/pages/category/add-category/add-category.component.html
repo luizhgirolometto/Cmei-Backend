@@ -4,20 +4,20 @@
       [formGroup]="categoryForm" (ngSubmit)="onQuizFormSubmit(categoryForm.value)">
       <mat-card-header>
         <mat-card-title>
-          <h2>CREATE NEW CATEGORY</h2>
+          <h2>CRIAR UMA CATEGORIA</h2>
         </mat-card-title>
       </mat-card-header>
 
       <mat-form-field fxFlex>
         <mat-label>Name</mat-label>
-        <input matInput formControlName="name" placeholder="Name" autocomplete="off">
-        <mat-error *ngIf="categoryForm.controls.name.errors?.required">Name is required</mat-error>
+        <input matInput formControlName="name" placeholder="Nome" autocomplete="off">
+        <mat-error *ngIf="categoryForm.controls.name.errors?.required">Nome é obrigatório</mat-error>
       </mat-form-field>
 
-      <mat-checkbox formControlName="status">PUBLISH</mat-checkbox>
+      <mat-checkbox formControlName="status">PUBLICAR</mat-checkbox>
 
       <mat-card-actions>
-        <button mat-raised-button color="primary">CREATE</button>
+        <button mat-raised-button color="primary">CRIAR</button>
       </mat-card-actions>
     </form>
   </mat-card>

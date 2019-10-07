@@ -42,7 +42,7 @@ export class AddCategoryComponent implements OnInit {
       this.categoryService.add(values as Category);
       this.router.navigate(["category"]);
       this.snackBar.open(
-        "Successfully added!",
+        "Adicionado com sucesso!",
         null,
         environment.snackBarConfig
       );

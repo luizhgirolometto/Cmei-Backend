@@ -67,7 +67,7 @@ export class ExamComponent implements OnInit {
   onRemove(key: string) {
     this.examService.delete(key);
     this.snackBar.open(
-      "Successfully deleted!",
+      "Excluído com sucesso!",
       null,
       environment.snackBarConfig
     );

@@ -4,14 +4,14 @@
       [formGroup]="questionForm" (ngSubmit)="onQuestionFormSubmit(questionForm.value)">
       <mat-card-header>
         <mat-card-title>
-          <h2>CREATE NEW QUESTION</h2>
+          <h2>CRIAR NOVA QUESTÃO</h2>
         </mat-card-title>
       </mat-card-header>
 
       <mat-form-field fxFlex>
-        <mat-label>Question</mat-label>
-        <input matInput formControlName="question" placeholder="Question" autocomplete="off">
-        <mat-error *ngIf="questionForm.controls.question.errors?.required">Question is required</mat-error>
+        <mat-label>Questão</mat-label>
+        <input matInput formControlName="question" placeholder="Questão" autocomplete="off">
+        <mat-error *ngIf="questionForm.controls.question.errors?.required">Questão é obrigatória</mat-error>
       </mat-form-field>
 
 
@@ -23,13 +23,13 @@
           <div [formGroupName]="i">
             <div>
               <mat-form-field fxFlex>
-                <input matInput placeholder="Answer" formControlName="answer" required>
+                <input matInput placeholder="Resposta" formControlName="answer" required>
               </mat-form-field>
             </div>
 
             <button id="btn_{{i}}" type="button" mat-mini-fab color="primary" fxFlex="nogrow"
               (click)="selectAnswerRight(i,$event)">
-              <mat-icon>check</mat-icon>
+              <mat-icon>marcar</mat-icon>
             </button>
 
             <button type="button" mat-mini-fab color="warn" fxFlex="nogrow"
@@ -43,15 +43,15 @@
 
 
 
-      <mat-checkbox formControlName="status">PUBLISH</mat-checkbox>
+      <mat-checkbox formControlName="status">PUBLICAR</mat-checkbox>
 
       <mat-card-actions>
         <a mat-raised-button color="primary" (click)="addAnswer()">
-          <mat-icon>add</mat-icon>ADD ANSWER
+          <mat-icon>add</mat-icon>INSERIR RESPOSTA
         </a>
-        <button mat-raised-button type="submit" color="primary">CREATE</button>
+        <button mat-raised-button type="submit" color="primary">CRIAR</button>
       </mat-card-actions>
-      <mat-error *ngIf="questionForm.controls.answerRight.errors?.required && submittedForm">Select correct answer</mat-error>
+      <mat-error *ngIf="questionForm.controls.answerRight.errors?.required && submittedForm">Marque a resposta correta</mat-error>
     </form>
   </mat-card>
 </div>

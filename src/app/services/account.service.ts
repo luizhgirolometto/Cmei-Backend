@@ -25,7 +25,7 @@ export class AccountService {
       .sendPasswordResetEmail(JSON.parse(this.getUser())["email"])
       .then(result => {
         this.snackBar.open(
-          "Successfully updated!",
+          "Atualizado com sucesso!",
           null,
           environment.snackBarConfig
         );
@@ -37,7 +37,7 @@ export class AccountService {
     user
       .updateProfile({ displayName: displayName })
       .then(result => {
-        this.snackBar.open("Successfully updated!");
+        this.snackBar.open("Atualizado com sucesso!");
         this.authService.logOut();
       })
       .catch(error => {

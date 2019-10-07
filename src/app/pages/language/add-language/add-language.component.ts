@@ -37,7 +37,7 @@ export class AddLanguageComponent implements OnInit {
       this.languageService.add(values as Language);
       this.router.navigate(["language"]);
       this.snackBar.open(
-        "Successfully added!",
+        "Adicionado com sucesso!",
         null,
         environment.snackBarConfig
       );

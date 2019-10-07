@@ -89,7 +89,7 @@ export class EditQuizComponent implements OnInit {
       this.quizService.update(values as Quiz, this.key);
       this.router.navigate(["quiz"]);
       this.snackBar.open(
-        "Successfully updated!",
+        "Atualizado com sucesso!",
         null,
         environment.snackBarConfig
       );

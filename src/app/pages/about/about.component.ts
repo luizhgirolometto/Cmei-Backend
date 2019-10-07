@@ -55,7 +55,7 @@ export class AboutComponent implements OnInit {
         this.helperService.updateAbout(values, this.key);
       }
       this.snackBar.open(
-        "Successfully updated!",
+        "Atualizado com sucesso!",
         null,
         environment.snackBarConfig
       );

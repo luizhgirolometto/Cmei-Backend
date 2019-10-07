@@ -4,28 +4,28 @@
       [formGroup]="questionForm" (ngSubmit)="onQuestionFormSubmit(questionForm.value)">
       <mat-card-header>
         <mat-card-title>
-          <h2>EDIT QUESTION</h2>
+          <h2>EDITAR QUESTÃO</h2>
         </mat-card-title>
       </mat-card-header>
 
       <mat-form-field fxFlex>
-        <mat-label>Question</mat-label>
+        <mat-label>Questão</mat-label>
         <input matInput formControlName="question" placeholder="Question" autocomplete="off">
-        <mat-error *ngIf="questionForm.controls.question.errors?.required">Question is required</mat-error>
+        <mat-error *ngIf="questionForm.controls.question.errors?.required">Questão é obrigatória</mat-error>
       </mat-form-field>
 
       <div formArrayName="answers" *ngFor="let answer of questionForm.controls.answers['controls']; let i=index"
         fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="gappx" style="width: 50%">
         <mat-form-field fxFlex>
-          <input matInput placeholder="Answer" formControlName="{{i}}" required>
-          <mat-icon *ngIf="correctAnswer==answer.value" matSuffix color="primary">check</mat-icon>
+          <input matInput placeholder="Resposta" formControlName="{{i}}" required>
+          <mat-icon *ngIf="correctAnswer==answer.value" matSuffix color="primary">marcar</mat-icon>
         </mat-form-field>
       </div>
 
-      <mat-checkbox formControlName="status">PUBLISH</mat-checkbox>
+      <mat-checkbox formControlName="status">PUBLICAR</mat-checkbox>
 
       <mat-card-actions>
-        <button mat-raised-button color="primary">SAVE CHANGES</button>
+        <button mat-raised-button color="primary">SALVAR ALTERAÇÕES</button>
       </mat-card-actions>
     </form>
   </mat-card>

@@ -51,7 +51,7 @@ export class EditLanguageComponent implements OnInit {
       this.languageService.update(values as Language, this.key);
       this.router.navigate(["language"]);
       this.snackBar.open(
-        "Successfully updated!",
+        "Atualizado com sucesso!",
         null,
         environment.snackBarConfig
       );

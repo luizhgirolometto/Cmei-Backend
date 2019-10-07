@@ -32,7 +32,7 @@ export class AuthService {
         this.loggedIn.next(true);
         this.router.navigate(["/dashboard"]);
         this.snackBar.open(
-          "Successfully entered!",
+          "Entrou com sucesso!",
           null,
           environment.snackBarConfig
         );
@@ -52,7 +52,7 @@ export class AuthService {
       .then(value => {
         this.router.navigate(["auth/login"]);
         this.snackBar.open(
-          "Successfully registered!",
+          "Registrado com sucesso!",
           null,
           environment.snackBarConfig
         );

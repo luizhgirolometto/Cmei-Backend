@@ -74,7 +74,7 @@ export class AddQuizComponent implements OnInit {
       this.quizService.add(quiz);
       this.router.navigate(["quiz"]);
       this.snackBar.open(
-        "Successfully added!",
+        "Adicionado com sucesso!",
         null,
         environment.snackBarConfig
       );
