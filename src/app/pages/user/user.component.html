@@ -2,7 +2,7 @@
   <div fxLayout="row">
     <div fxFlex>
       <mat-form-field fxFlex="30">
-        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search by username">
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Buscar por usuário">
       </mat-form-field>
     </div>
   </div>
@@ -25,17 +25,17 @@
       </ng-container>
 
       <ng-container matColumnDef="userName">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Username </th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Usuário </th>
         <td mat-cell *matCellDef="let element"> {{element.userName}} </td>
       </ng-container>
 
       <ng-container matColumnDef="firstName">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> First Name </th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Nome </th>
         <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
       </ng-container>
 
       <ng-container matColumnDef="lastName">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Last Name </th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Sobrenome </th>
         <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
       </ng-container>
 

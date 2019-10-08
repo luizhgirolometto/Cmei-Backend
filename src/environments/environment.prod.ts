@@ -14,6 +14,6 @@ export const environment = {
   snackBarConfig: {
     duration: 2 * 1000
   },
-  ONESIGNAL_APP_ID: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-  ONESIGNAL_REST_API_KEY: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  ONESIGNAL_APP_ID: "cc70dc59-2563-4fb6-bc8c-18d8f18eac5e",
+  ONESIGNAL_REST_API_KEY: "MTc0NDgyNmItOTVmMC00NGY0LWFlNTYtMmQwMTdkMDVhNmUz"
 };

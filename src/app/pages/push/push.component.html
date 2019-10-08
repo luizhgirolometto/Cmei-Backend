@@ -2,18 +2,18 @@
   <div fxLayout="row">
     <div fxFlex>
       <mat-form-field fxFlex="30">
-        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search by header">
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Buscar por cabeçalho">
       </mat-form-field>
     </div>
     <div fxLayout="row" fxLayoutGap="20px">
       <div fxLayout="column" fxLayoutAlign="start end">
         <a mat-raised-button color="primary" [routerLink]="['/push/devices']" routerLinkActive="active">
-          <mat-icon>view_list</mat-icon> DEVICES
+          <mat-icon>view_list</mat-icon> DISPOSITIVOS
         </a>
       </div>
       <div fxLayout="column" fxLayoutAlign="start end">
         <a mat-raised-button color="primary" (click)="newNotification()">
-          <mat-icon>add</mat-icon> NEW NOTIFICATION
+          <mat-icon>add</mat-icon> NOVA NOTIFICAÇÃO
         </a>
       </div>
     </div>
@@ -28,17 +28,17 @@
       matSortDirection="desc">
 
       <ng-container matColumnDef="headings.en">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Header </th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Cabeçalho </th>
         <td mat-cell *matCellDef="let element"> {{element.headings.en}} </td>
       </ng-container>
 
       <ng-container matColumnDef="contents.en">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Content </th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Conteudo </th>
         <td mat-cell *matCellDef="let element"> {{element.contents.en}} </td>
       </ng-container>
 
       <ng-container matColumnDef="successful">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Successfully </th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Sucesso </th>
         <td mat-cell *matCellDef="let element"> {{element.successful}} </td>
       </ng-container>
 

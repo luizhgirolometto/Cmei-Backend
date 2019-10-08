@@ -21,18 +21,18 @@ export class DashboardComponent implements OnInit {
     }
   ];
   public lineChartLabels: Label[] = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro"
   ];
   public lineChartOptions: ChartOptions & { annotation: any } = {
     responsive: true,
