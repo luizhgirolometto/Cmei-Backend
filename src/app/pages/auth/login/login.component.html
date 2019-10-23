@@ -13,14 +13,14 @@
       <mat-form-field class="w-100" fxFlex>
         <mat-label>Email</mat-label>
         <input matInput formControlName="email" placeholder="Email" autocomplete="off">
-        <mat-error *ngIf="loginForm.controls.email.errors?.required">Requer um e-mail</mat-error>
+        <mat-error *ngIf="loginForm.controls.email.errors?.required">e-mail obrigatório</mat-error>
         <mat-error *ngIf="loginForm.controls.email.hasError('invalidEmail')">e-mail inválido</mat-error>
       </mat-form-field>
 
       <mat-form-field class="w-100" fxFlex>
         <mat-label>Senha</mat-label>
         <input matInput formControlName="password" placeholder="Senha" autocomplete="off" type="password">
-        <mat-error *ngIf="loginForm.controls.password.errors?.required">Requer uma senha</mat-error>
+        <mat-error *ngIf="loginForm.controls.password.errors?.required">Senha obrigatória</mat-error>
         <mat-error *ngIf="loginForm.controls.password.hasError('minlength')">Senha curta, mínimo de 6 caracteres
         </mat-error>
       </mat-form-field>
